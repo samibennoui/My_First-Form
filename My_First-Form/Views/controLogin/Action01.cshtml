@@ -1,0 +1,106 @@
+﻿@model My_First_Form.Models.model01
+@using My_First_Form.Models
+@{
+    ViewBag.Title = "Action01";
+}
+
+<h2>MY First Form</h2>
+<html>
+<head>
+    <style>
+        #d7{
+            background-color : aqua;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: row;
+        }
+       .form-control2{
+            margin-left :20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form method="post" action="/controLogin/Action02" >
+
+        <div class="form-group">
+            <label for="Etes-vous marié(e)">Marié(e) ?</label>
+
+            <input type="radio" id="mariéOui" name="Marié" value="oui">
+            <label for="mariéOui">Oui</label>
+
+            <input type="radio" id="mariéNon" name="Marié" value="non" checked="checked">
+            <label for="mariéNon">Non</label>
+
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="casesACocher">Cases à cocher :</label>
+
+            <input type="checkbox" id="caseACocher1" name="CasesACocher" value="1">
+            <label for="caseACocher1">1</label>
+
+            <input type="checkbox" id="caseACocher2" name="CasesACocher" value="2" checked="checked">
+            <label for="caseACocher2">2</label>
+
+            <input type="checkbox" id="caseACocher3" name="CasesACocher" value="3">
+            <label for="caseACocher3">3</label>
+
+        </div>
+        <br />
+        <div class="form-group" id="d1">
+            <label for="champDeSaisie">Champ de saisie :</label>
+            <input type="text" id="champDeSaisie" name="ChampDeSaisie" class="form-control2">
+
+        </div>
+        <br />
+        <div class="form-group" id="d2">
+            <label for="motDePasse">Mot de passe :</label>
+            <input type="password" id="motDePasse" name="MotDePasse" class="form-control2">
+        </div>
+        <br />
+        <div class="form-group" id="d3">
+            <label for="boîteDeSaisie">Boîte de saisie :</label>
+            <textarea id="boîteDeSaisie" name="BoîteDeSaisie" rows="4" class="form-control2"></textarea>
+        </div>
+        <br />
+        <div class="form-group" id="d4">
+            <label for="listeDéroulante">Liste déroulante :</label>
+            <select id="listeDéroulante" name="ListeDéroulante" class="form-control2">
+                <option value="choix1">choix1</option>
+                <option value="choix2">choix2</option>
+                <option value="choix3">choix3</option>
+            </select>
+        </div>
+        <br />
+        <div class="form-group" id="d5">
+            <label for="liste a chois unique">Liste à choix unique:</label>
+            <select size="2" id="Liste à choix unique" name="Listechoixunique" class="form-control2">
+                <option value="bennoui">bennoui</option>
+                <option selected="selected" value="benyahia">benyahia</option>
+                <option value="saidani">saidani</option>
+                <option value="bechelaghem">bechelaghem</option>
+            </select>
+        </div>
+        <br />
+        <div class="form-group" id="d6">
+            <label for="liste a Choix multiple">Liste à multiple choix :</label>
+            <select size="2" id="Liste à choix multiple" name="Listechoixmultiple" class="form-control2" multiple>
+                <option value="sami">sami</option>
+                <option selected="selected" value="raouf">raouf</option>
+                <option value="rayan">rayan</option>
+                <option value="abderezzak">abderezzak</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <input id="d7" type="submit" value="Connecter" />
+        </div>
+
+    </form>
+</body>
+</html>

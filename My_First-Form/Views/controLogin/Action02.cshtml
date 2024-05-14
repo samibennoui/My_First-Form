@@ -1,0 +1,19 @@
+﻿@model My_First_Form.Models.model02
+    @using My_First_Form.Models
+
+@{
+    ViewBag.Title = "Action02";
+}
+
+<h2>Affichage des information</h2>
+<ul>
+    <li> Vous etes:@Model.Marié</li>
+    <li>casa a coucher:@Model.CasesACocher</li>
+    <li>vous etes sisir:@Model.ChampDeSaisie </li>
+    <li>votre mot de passe est:@Model.MotDePasse</li>
+    <li>vous avez saisez::@Model.BoîteDeSaisie</li>
+    <li>liste déroulant est:@Model.ListeDéroulante</li>
+    <li>liste a Choix unique:@Model.Listechoixunique</li>
+    <li>liste des choix multiple est :@Model.Listechoixmultiple</li>
+</ul>
+
